@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F09624B-CD55-45DA-9CC4-DFE02CA9C446}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrderingUI</RootNamespace>
+    <AssemblyName>OrderingUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatalogItemScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogItemScreen.Designer.cs">
+      <DependentUpon>CatalogItemScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogPortalScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogPortalScreen.Designer.cs">
+      <DependentUpon>CatalogPortalScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogScreen.Designer.cs">
+      <DependentUpon>CatalogScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyContactScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyContactScreen.Designer.cs">
+      <DependentUpon>CompanyContactScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactPortalScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactPortalScreen.Designer.cs">
+      <DependentUpon>ContactPortalScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPortalScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerPortalScreen.Designer.cs">
+      <DependentUpon>CustomerPortalScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCompanyScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCompanyScreen.Designer.cs">
+      <DependentUpon>EditCompanyScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent.Designer.cs">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewCompanyScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCompanyScreen.Designer.cs">
+      <DependentUpon>NewCompanyScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItemScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderItemScreen.Designer.cs">
+      <DependentUpon>OrderItemScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPortalScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderPortalScreen.Designer.cs">
+      <DependentUpon>OrderPortalScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderScreen.Designer.cs">
+      <DependentUpon>OrderScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProdScreen.Designer.cs">
+      <DependentUpon>ViewProdScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CatalogItemScreen.resx">
+      <DependentUpon>CatalogItemScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogPortalScreen.resx">
+      <DependentUpon>CatalogPortalScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogScreen.resx">
+      <DependentUpon>CatalogScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyContactScreen.resx">
+      <DependentUpon>CompanyContactScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactPortalScreen.resx">
+      <DependentUpon>ContactPortalScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerPortalScreen.resx">
+      <DependentUpon>CustomerPortalScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCompanyScreen.resx">
+      <DependentUpon>EditCompanyScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent.resx">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCompanyScreen.resx">
+      <DependentUpon>NewCompanyScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItemScreen.resx">
+      <DependentUpon>OrderItemScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderPortalScreen.resx">
+      <DependentUpon>OrderPortalScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderScreen.resx">
+      <DependentUpon>OrderScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProdScreen.resx">
+      <DependentUpon>ViewProdScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Company.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManufacturingLib\ManufacturingLib.csproj">
+      <Project>{5716f4cc-116e-4db0-8b5c-ac16c5404bda}</Project>
+      <Name>ManufacturingLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrderingLib\OrderingLib.csproj">
+      <Project>{95f8f9c1-d681-4a31-bf49-af2805ef215b}</Project>
+      <Name>OrderingLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+﻿table, td, tr {
+    border: 1px solid black;
+}
+
+h1{
+    float: left;
+    margin-right: 15px;
+}
+
+#head {
+
+    width: 780px;
+    height: 80px;
+}
